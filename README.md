@@ -1,7 +1,7 @@
 # Todo App (localStorage)
 
 A small but fully functional Todo app that stores tasks in **localStorage**, lets you add, edit, and delete tasks, and protects you from accidentally discarding unsaved changes.
-
+![todo app Screenshot](./img/Screenshot-todo-app-localStorage.png)
 ---
 
 ## Features

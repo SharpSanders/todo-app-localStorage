@@ -84,25 +84,21 @@ No frameworks. No backend.
 ## Code Structure
 
 todo-app-localStorage/
-├── index.html
-├── styles.css
-└── script.js
+├── index.html # App layout, form, dialog, containers
+├── styles.css # UI styling and responsive layout
+└── script.js # State management, rendering, localStorage logic
 
 
-Core state is stored in:
+### Core State
 
 ```js
 const taskData = JSON.parse(localStorage.getItem("data")) || [];
 let currentTask = {};
-Rendering is handled through a centralized updateTaskContainer() function that rebuilds the UI from state.
+taskData stores all tasks in memory.
 
-How To Run Locally
-Clone the repository:
+currentTask tracks the task currently being edited (if any).
 
-git clone https://github.com/SharpSanders/todo-app-localStorage.git
-Open index.html in your browser
-
-No build process required.
+Rendering is handled through a centralized updateTaskContainer() function that rebuilds the UI from the current state.
 
 Future Improvements
 Task completion toggle
